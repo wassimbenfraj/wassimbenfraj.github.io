@@ -19,7 +19,7 @@ if(isset($_POST)){
 	$messages .= "<li><strong>Message: </strong>" .$message."</li>";
 	$messages .= "</ul> \r\n";
 
-	$mail = new PHPMailer;
+    $mail = new PHPMailer(true);
 
 	$mail->From = $from;
 	$mail->FromName = $fromName;
